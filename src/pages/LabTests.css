@@ -1,0 +1,112 @@
+.lab-page {
+  padding: 40px 20px;
+  background-color: #f4fbff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.lab-heading {
+  font-size: 2rem;
+  color: #0f61b5;
+  text-align: center;
+}
+
+.lab-subtext {
+  text-align: center;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.lab-test-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.lab-test-item {
+  background-color: #ffffff;
+  border: 2px solid #e0e0e0;
+  padding: 15px 20px;
+  border-radius: 12px;
+  width: 250px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.lab-test-item:hover,
+.lab-test-item.selected {
+  border-color: #0f61b5;
+  background-color: #e7f3ff;
+}
+
+.lab-form {
+  max-width: 400px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.lab-form h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0f61b5;
+}
+
+.lab-form input {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.lab-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0f61b5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.lab-form button:hover {
+  background-color: #0b4d8b;
+}
+
+/* ===================== SPEAK LAB TEST INFO BUTTON ===================== */
+.speak-lab-info-btn {
+  background-color: #ffeb3b;
+  color: #10847e;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+.speak-lab-info-btn:hover {
+  background-color: #f1c40f;
+  color: #fff;
+}
+
+.speak-lab-info-btn svg {
+  width: 20px;
+  height: 20px;
+  fill: #10847e;
+}

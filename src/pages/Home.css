@@ -1,0 +1,162 @@
+.home-container {
+  font-family: sans-serif;
+}
+
+/* ===================== VIDEO HERO BANNER ===================== */
+.video-banner {
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Shared styles for banner content (both video and static) */
+.banner-content {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 80px 20px;
+  background-color: rgba(0, 0, 0, 0.4); /* overlay for text visibility */
+}
+
+.banner-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.banner-content p {
+  font-size: 1.5rem;
+}
+
+/* ===================== STATIC HERO BANNER (fallback mode) ===================== */
+.banner-content.no-video {
+  background: linear-gradient(135deg, #0f61b5, #0bb8d7);
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+/* ===================== IMAGE SLIDER ===================== */
+.slider-container {
+  margin: 20px auto 40px;
+  max-width: 1000px;
+}
+
+.slide-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* ===================== CATEGORY ICON SECTION ===================== */
+.category-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 70px 40px;
+  background-color: #fff;
+  gap: 50px;
+}
+
+.category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+  text-align: center;
+  transition: transform 0.5s ease;
+}
+
+.category-item img {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.category-item p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.category-item:hover {
+  transform: scale(1.05);
+}
+
+/* ===================== FEATURES SECTION ===================== */
+.features-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px 80px;
+  background-color: #f5f5f5;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  background-color: white;
+  width: 500px;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.category-clickable {
+  cursor: pointer;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 10px;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.category-clickable:hover {
+  background-color: #f0faff;
+  transform: scale(1.05);
+}
+
+/* ===================== SPEAK HOME PAGE BUTTON ===================== */
+.speak-home-btn {
+  background-color: #ffeb3b;
+  color: #10847e;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+.speak-home-btn:hover {
+  background-color: #f1c40f;
+  color: #fff;
+}
+
+.speak-home-btn svg {
+  width: 20px;
+  height: 20px;
+  fill: #10847e;
+}
